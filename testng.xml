@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="suite" parallel="classes" thread-count="2">
+    <test name="devops-regress-test">
+        <classes>
+            <class name="com.zhubajie.qa.testcase.TestLogin" />
+            <class name="com.zhubajie.qa.testcase.TestLogin2" />
+        </classes>
+    </test>
+    <!--
+    <listeners>
+        <listener class-name="com.zhubajie.report.ZBJReport" />
+        <listener class-name="com.zhubajie.listener.TestngListener" />
+        <listener class-name="com.zhubajie.listener.TestngRetry" />
+    </listeners> -->
+</suite>

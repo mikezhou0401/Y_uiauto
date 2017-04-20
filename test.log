@@ -1,0 +1,62 @@
+2017-04-20 09:54:47 devops : 打开浏览器,输入地址:https://bosslogin.t11.zbjdev.com/cp-dirlogin?back_url=http://devops.test.zbjdev.com/calllogin&appid=13353
+2017-04-20 09:54:47 devops : 输入用户名
+2017-04-20 09:54:47 devops : 输入密码
+2017-04-20 09:54:47 devops : 打开浏览器,输入地址:https://bosslogin.t11.zbjdev.com/cp-dirlogin?back_url=http://devops.test.zbjdev.com/calllogin&appid=13353
+2017-04-20 09:54:47 devops : 输入用户名
+2017-04-20 09:54:47 devops : 点击登陆
+2017-04-20 09:54:47 devops : 输入密码
+2017-04-20 09:54:47 devops : assertTrue(true,断言：登录成功)
+2017-04-20 09:54:47 devops : 点击登陆
+2017-04-20 09:54:47 devops : assertTrue(true,断言：登录成功)
+2017-04-20 09:57:42 devops : *******************测试发生错误、自动进行第1次重试*******************
+2017-04-20 09:57:42 devops : *******************测试发生错误、自动进行第1次重试*******************
+2017-04-20 09:57:42 devops : running retry for 'testLogin' on class com.zhubajie.listener.TestngRetryRetrying 1 times
+2017-04-20 09:57:42 devops : running retry for 'testLogin' on class com.zhubajie.listener.TestngRetryRetrying 1 times
+2017-04-20 09:57:45 devops : 打开浏览器,输入地址:https://bosslogin.t11.zbjdev.com/cp-dirlogin?back_url=http://devops.test.zbjdev.com/calllogin&appid=13353
+2017-04-20 09:57:45 devops : 打开浏览器,输入地址:https://bosslogin.t11.zbjdev.com/cp-dirlogin?back_url=http://devops.test.zbjdev.com/calllogin&appid=13353
+2017-04-20 09:57:45 devops : 输入用户名
+2017-04-20 09:57:45 devops : 输入用户名
+2017-04-20 09:57:45 devops : 输入密码
+2017-04-20 09:57:45 devops : 输入密码
+2017-04-20 09:57:45 devops : 点击登陆
+2017-04-20 09:57:45 devops : 点击登陆
+2017-04-20 09:57:45 devops : assertTrue(false,断言：登录成功)
+2017-04-20 09:57:45 devops : assertTrue(true,断言：登录成功)
+2017-04-20 10:03:46 devops : 打开浏览器,输入地址:https://bosslogin.t11.zbjdev.com/cp-dirlogin?back_url=http://devops.test.zbjdev.com/calllogin&appid=13353
+2017-04-20 10:03:46 devops : 打开浏览器,输入地址:https://bosslogin.t11.zbjdev.com/cp-dirlogin?back_url=http://devops.test.zbjdev.com/calllogin&appid=13353
+2017-04-20 10:03:47 devops : 输入用户名
+2017-04-20 10:03:47 devops : 输入用户名
+2017-04-20 10:03:47 devops : 输入密码
+2017-04-20 10:03:47 devops : 输入密码
+2017-04-20 10:03:47 devops : 点击登陆
+2017-04-20 10:03:47 devops : 点击登陆
+2017-04-20 10:03:47 devops : assertTrue(true,断言：登录成功)
+2017-04-20 10:03:47 devops : assertTrue(true,断言：登录成功)
+2017-04-20 10:17:42 devops : 打开浏览器,输入地址:https://bosslogin.t11.zbjdev.com/cp-dirlogin?back_url=http://devops.test.zbjdev.com/calllogin&appid=13353
+2017-04-20 10:17:42 devops : 输入用户名
+2017-04-20 10:17:42 devops : 输入密码
+2017-04-20 10:17:42 devops : 点击登陆
+2017-04-20 10:17:42 devops : assertTrue(true,断言：登录成功)
+2017-04-20 10:17:49 devops : Unknown column 'testLogin' in 'field list'
+2017-04-20 10:18:07 devops : 打开浏览器,输入地址:https://bosslogin.t11.zbjdev.com/cp-dirlogin?back_url=http://devops.test.zbjdev.com/calllogin&appid=13353
+2017-04-20 10:18:07 devops : 输入用户名
+2017-04-20 10:18:07 devops : 输入密码
+2017-04-20 10:18:08 devops : 点击登陆
+2017-04-20 10:18:08 devops : assertTrue(true,断言：登录成功)
+2017-04-20 10:18:14 devops : Unknown column 'testLogin' in 'field list'
+2017-04-20 10:21:14 devops : 打开浏览器,输入地址:https://bosslogin.t11.zbjdev.com/cp-dirlogin?back_url=http://devops.test.zbjdev.com/calllogin&appid=13353
+2017-04-20 10:21:14 devops : 输入用户名
+2017-04-20 10:21:14 devops : 输入密码
+2017-04-20 10:21:14 devops : 点击登陆
+2017-04-20 10:21:14 devops : assertTrue(true,断言：登录成功)
+2017-04-20 10:21:20 devops : Unknown column 'testLogin' in 'field list'
+2017-04-20 10:22:35 devops : 打开浏览器,输入地址:https://bosslogin.t11.zbjdev.com/cp-dirlogin?back_url=http://devops.test.zbjdev.com/calllogin&appid=13353
+2017-04-20 10:22:35 devops : 输入用户名
+2017-04-20 10:22:35 devops : 输入密码
+2017-04-20 10:22:35 devops : 点击登陆
+2017-04-20 10:22:35 devops : assertTrue(true,断言：登录成功)
+2017-04-20 10:26:22 devops : 打开浏览器,输入地址:https://bosslogin.t11.zbjdev.com/cp-dirlogin?back_url=http://devops.test.zbjdev.com/calllogin&appid=13353
+2017-04-20 10:26:22 devops : 输入用户名
+2017-04-20 10:26:22 devops : 输入密码
+2017-04-20 10:26:22 devops : 点击登陆
+2017-04-20 10:26:23 devops : assertTrue(true,断言：登录成功)

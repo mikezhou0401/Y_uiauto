@@ -1,0 +1,2 @@
+com.zhubajie.qa.testcase.TestLogin testLogin 2017-04-20 10:03:44 8237毫秒 SUCCESS
+com.zhubajie.qa.testcase.TestLogin2 testLogin 2017-04-20 10:03:44 8230毫秒 SUCCESS
