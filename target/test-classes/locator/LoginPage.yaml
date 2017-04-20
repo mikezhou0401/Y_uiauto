@@ -1,9 +1,0 @@
-输入用户名:
-  type:id
-  value:login-box-finput
-输入密码:
-  type:xpath
-  value:"//div[@class='login-box-input input-pwd clearfix']//input"
-点击登陆:
-  type:xpath
-  value:"//div[@id='code']/form/input[1]"
