@@ -1,25 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="99a15694-3175-4e3a-b723-0c01d3ea134d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/testdata/TestApplyProject.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/zhubajie/qa/page/ApplyProjectPage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/locator/ApplyProjectPage.yaml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/zhubajie/qa/page/MenuPage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/locator/MenuPage.yaml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/zhubajie/util/RandomUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/zhubajie/qa/testcase/TestApplyProject.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/com/zhubajie/qa/testcase/TestLogin.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/com/zhubajie/qa/testcase/TestLogin2.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/resources/testdata/TestLogin.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/resources/testdata/TestLogin2.xlsx" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/zhubajie/util/DateUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/zhubajie/util/DateUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/zhubajie/base/Locator.java" afterPath="$PROJECT_DIR$/src/main/java/com/zhubajie/base/Locator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/zhubajie/qa/page/LoginPage.java" afterPath="$PROJECT_DIR$/src/test/java/com/zhubajie/qa/page/LoginPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/locator/LoginPage.yaml" afterPath="$PROJECT_DIR$/src/test/resources/locator/LoginPage.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/config.properties" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testng.xml" afterPath="$PROJECT_DIR$/testng.xml" />
+    <list default="true" id="99a15694-3175-4e3a-b723-0c01d3ea134d" name="Default" comment="update case">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/locator/MenuPage.yaml" afterPath="$PROJECT_DIR$/src/test/resources/locator/MenuPage.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/zhubajie/util/RandomUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/zhubajie/util/RandomUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/zhubajie/qa/testcase/TestApplyProject.java" afterPath="$PROJECT_DIR$/src/test/java/com/zhubajie/qa/testcase/TestApplyProject.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
+    <list id="9b3fd144-1072-4446-923b-311ea5d54b07" name="Failed commit: Default" comment="update case">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/locator/ApplyProjectPage.yaml" afterPath="$PROJECT_DIR$/src/test/resources/locator/ApplyProjectPage.yaml" />
     </list>
     <ignored path="PlayBoy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -106,10 +95,10 @@
         <option value="$PROJECT_DIR$/src/test/java/com/zhubajie/qa/page/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/zhubajie/qa/testcase/TestLogin.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhubajie/util/DateUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zhubajie/util/RandomUtil.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/zhubajie/qa/page/ApplyProjectPage.java" />
         <option value="$PROJECT_DIR$/src/test/resources/locator/ApplyProjectPage.yaml" />
         <option value="$PROJECT_DIR$/src/test/java/com/zhubajie/qa/testcase/TestApplyProject.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhubajie/util/RandomUtil.java" />
       </list>
     </option>
   </component>
@@ -915,7 +904,7 @@
       <option name="number" value="Default" />
       <updated>1492417752366</updated>
       <workItem from="1492417760852" duration="49267000" />
-      <workItem from="1492658535302" duration="15247000" />
+      <workItem from="1492658535302" duration="15598000" />
     </task>
     <task id="LOCAL-00001" summary="adadas">
       <created>1492657664766</created>
@@ -935,11 +924,17 @@
       <option name="project" value="LOCAL" />
       <updated>1492659073125</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="update case">
+      <created>1492744805272</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1492744805272</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64514000" />
+    <option name="totallyTimeSpent" value="64865000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -961,11 +956,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4863184" sideWeight="0.5028612" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298611" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329602" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.329602" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24502487" sideWeight="0.49713877" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48383084" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26466382" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26466382" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -996,7 +991,8 @@
     <MESSAGE value="adadas" />
     <MESSAGE value="del" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="update case" />
+    <option name="LAST_COMMIT_MESSAGE" value="update case" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1391,14 +1387,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhubajie/util/RandomUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="23" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/zhubajie/qa/page/LoginPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.19421488">
@@ -1449,6 +1437,17 @@
           <caret line="27" column="52" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhubajie/util/RandomUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.55012226">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="e#172#173#0" expanded="true" />
+            <element signature="e#236#237#0" expanded="true" />
           </folding>
         </state>
       </provider>
