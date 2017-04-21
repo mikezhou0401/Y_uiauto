@@ -1,7 +1,6 @@
 package com.zhubajie.qa.testcase;
 
 import com.zhubajie.base.TestBase;
-import com.zhubajie.qa.check.CheckLoginPage;
 import com.zhubajie.qa.page.ApplyProjectPage;
 import com.zhubajie.qa.page.LoginPage;
 import com.zhubajie.qa.page.MenuPage;
