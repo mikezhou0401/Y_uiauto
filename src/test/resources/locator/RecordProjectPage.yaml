@@ -1,0 +1,36 @@
+点击工程档案:
+  type:xpath
+  value:"//ul[@id='side-menu']/li[4]/ul/li[2]/a/span"
+点击工程录入:
+  type:id
+  value:title
+输入系统名称:
+  type:id
+  value:engineName
+输入中文简称:
+  type:id
+  value:zhName
+选择语言:
+  type:xpath
+  value:"//select[@id='prolgLanguage']/option[2]"
+选择项目类型:
+  type:xpath
+  value:"//select[@id='projectType']/option[4]"
+选择工程类型:
+  type:xpath
+  value:"//select[@id='engineType']/option[2]"
+输入工程GIT地址:
+  type:id
+  value:gitUrl
+点击提交:
+  type:id
+  value:manage-engineManageInfo-editform-submit
+输入系统名称:
+  type:id
+  value:engineName
+点击查询:
+  type:id
+  value:manage-engineManageInfo-searchbtn
+点击操作:
+  type:xpath
+  value:"//ul[@class='menu-share']/li/a"

@@ -1,5 +1,6 @@
 package com.zhubajie.base;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 
@@ -21,5 +22,13 @@ public class Page extends Locator {
 
 	protected Actions getAction(){
 		return new Actions(driver);
+	}
+
+	/**
+	 * enter键
+	 */
+	public void clickEnter(){
+		this.getAction().keyDown(Keys.CONTROL).sendKeys(Keys.ENTER).perform();
+		this.getAction().keyUp(Keys.CONTROL).sendKeys(Keys.ENTER).perform();
 	}
 }

@@ -1,6 +1,7 @@
 package com.zhubajie.qa.testcase;
 
 import com.zhubajie.base.TestBase;
+import com.zhubajie.qa.check.CheckApplyProjectPage;
 import com.zhubajie.qa.page.ApplyProjectPage;
 import com.zhubajie.qa.page.LoginPage;
 import com.zhubajie.qa.page.MenuPage;
@@ -30,6 +31,7 @@ public class TestApplyProject extends TestBase {
 		applyProjectPage.submit();
 		applyProjectPage.inputEngineName();
 		applyProjectPage.query();
+		CheckApplyProjectPage.checkApplyProjectOk(assertor,applyProjectPage.checkOpIsEnable());
 		applyProjectPage.clickOp();
 		applyProjectPage.confirm();
 	}

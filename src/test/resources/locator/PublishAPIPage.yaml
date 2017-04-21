@@ -1,0 +1,18 @@
+点击发布API:
+  type:xpath
+  value:"//ul[@id='side-menu']/li[5]/ul/li[1]/a/span"
+输入系统名:
+  type:id
+  value:search_LIKE_engineName
+点击查询:
+  type:id
+  value:manage-engineManageInfo-searchbtn
+选择分支:
+  type:id
+  value:select2-manage-select2-branches-container
+输入分支:
+  type:xpath
+  value:"//input[@class='select2-search__field']"
+点击发布:
+  type:xpath
+  value:"//div[@id='mainBox']/div/div/div[2]/a"

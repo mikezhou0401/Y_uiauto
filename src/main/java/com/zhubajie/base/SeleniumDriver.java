@@ -43,7 +43,8 @@ public class SeleniumDriver {
 				//System.setProperty("webdriver.chrome.driver", "src/test/resources/files/chromedriver.exe");
 				System.setProperty("webdriver.chrome.driver", "/Users/chenggang/Library/chromedriver/chromedriver");
 				ChromeOptions options = new ChromeOptions();
-				options.addArguments("--test-type");
+				//mac
+				options.addArguments("--kiosk");
 				driver = new ChromeDriver(options);
 			}else{
 				DesiredCapabilities capability = null;
