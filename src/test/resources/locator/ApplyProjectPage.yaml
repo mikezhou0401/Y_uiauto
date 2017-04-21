@@ -1,0 +1,66 @@
+申请工程:
+  type:xpath
+  value:"//ul[@id='side-menu']/li[4]/ul/li[1]/a/span"
+新增申请:
+  type:id
+  value:title
+部门ID:
+  type:name
+  value:departmentId
+部门:
+  type:id
+  value:department
+语言:
+  type:xpath
+  value:"//select[@id='prolgLanguage']/option[2]"
+主业务:
+  type:xpath
+  value:"//select[@id='bigProduct']/option[2]"
+项目名称:
+  type:id
+  value:engineModule
+类型:
+  type:xpath
+  value:"//select[@id='applicationRole']/option[3]"
+中文名称:
+  type:id
+  value:zhName
+Maven_Group_Id:
+  type:id
+  value:engineGroupId
+项目类型:
+  type:xpath
+  value:"//select[@id='projectType']/option[2]"
+工程模板:
+  type:xpath
+  value:"//select[@id='engineType']/option[3]"
+PROJECT_GIT_GROUP_NAME:
+  type:id
+  value:gitGroup
+PHP_GIT_GROUP_NAME:
+  type:id
+  value:phpGitGroupName
+NODEJS_GIT_GROUP_NAME:
+  type:id
+  value:nodejsGitGroupName
+提交:
+  type:id
+  value:manage-engineManageAppli-editform-submit
+系统名称:
+  type:id
+  value:engineName
+查询:
+  type:id
+  value:manage-engineManageAppli-searchbtn
+操作:
+  type:xpath
+  value:"//ul[@class='menu-share']/li/a"
+确认申请:
+  type:xpath
+  value:"//ul[@class='menu-share']//ul/li[3]/a"
+再次确认申请:
+  type:xpath
+  value:"//div[@class='sa-button-container']/div/button"
+OK:
+  type:xpath
+  value:"//div[@class='sa-button-container']/div/button"

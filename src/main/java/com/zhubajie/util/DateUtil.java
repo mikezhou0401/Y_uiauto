@@ -160,6 +160,22 @@ public class DateUtil {
 		return String.valueOf(new Date().getTime());
 	}
 
+	/**
+	 *
+	 * @Title: sleep
+	 * @Description: 等待时间
+	 * @param @param secs    设定文件
+	 * @return void    返回类型
+	 * @throws
+	 */
+	public static void sleep(int secs){
+		try {
+			Thread.sleep(secs*1000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+
 	public static void main(String[] args) {
 		try {
 			System.out.println(strToDate("15OCT2013", "ddMMMyyy",

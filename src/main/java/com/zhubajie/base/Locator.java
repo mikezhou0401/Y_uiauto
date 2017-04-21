@@ -3,6 +3,7 @@ import com.zhubajie.util.Log;
 import com.zhubajie.util.PropertiesUtil;
 import org.ho.yaml.Yaml;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedCondition;
@@ -127,5 +128,22 @@ public class Locator {
                     + yamlFile + ".yaml");
         }
         return element;
+    }
+
+    /**
+     * 移除元素的属性
+     */
+    public void removeAttribute(String id){
+        JavascriptExecutor js = (JavascriptExecutor)driver;
+        js.executeScript("document.getElementById(\""+id+"\").removeAttribute('readonly');");
+    }
+
+    /**
+     * 修改元素属性
+     * @param name
+     */
+    public void updateAttribute(String name){
+        JavascriptExecutor js = (JavascriptExecutor)driver;
+        js.executeScript("document.getElementsByName(\""+name+"\")[0].setAttribute('type', 'text');");
     }
 }
