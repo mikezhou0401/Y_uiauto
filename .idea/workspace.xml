@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="99a15694-3175-4e3a-b723-0c01d3ea134d" name="Default" comment="update case">
+    <list default="true" id="99a15694-3175-4e3a-b723-0c01d3ea134d" name="Default" comment="update tools">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/locator/MenuPage.yaml" afterPath="$PROJECT_DIR$/src/test/resources/locator/MenuPage.yaml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/zhubajie/util/RandomUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/zhubajie/util/RandomUtil.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/zhubajie/qa/testcase/TestApplyProject.java" afterPath="$PROJECT_DIR$/src/test/java/com/zhubajie/qa/testcase/TestApplyProject.java" />
@@ -24,7 +24,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
-    <option name="PATCH_PATH" value="" />
+    <option name="PATCH_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -904,7 +904,7 @@
       <option name="number" value="Default" />
       <updated>1492417752366</updated>
       <workItem from="1492417760852" duration="49267000" />
-      <workItem from="1492658535302" duration="15598000" />
+      <workItem from="1492658535302" duration="15712000" />
     </task>
     <task id="LOCAL-00001" summary="adadas">
       <created>1492657664766</created>
@@ -930,11 +930,17 @@
       <option name="project" value="LOCAL" />
       <updated>1492744805272</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update case">
+      <created>1492745133438</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1492745133438</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64865000" />
+    <option name="totallyTimeSpent" value="64979000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -992,7 +998,8 @@
     <MESSAGE value="del" />
     <MESSAGE value="update" />
     <MESSAGE value="update case" />
-    <option name="LAST_COMMIT_MESSAGE" value="update case" />
+    <MESSAGE value="update tools" />
+    <option name="LAST_COMMIT_MESSAGE" value="update tools" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1443,12 +1450,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zhubajie/util/RandomUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.55012226">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="e#172#173#0" expanded="true" />
-            <element signature="e#236#237#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.30963302">
+          <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>
