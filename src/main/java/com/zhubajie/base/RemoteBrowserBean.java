@@ -8,7 +8,7 @@ public class RemoteBrowserBean {
 	private String version;
 	private String[] platform;
 	private String hubURL;
-	private String IP = "192.168.142.7";
+	private String IP = "172.26.8.168";
 	public RemoteBrowserBean(){
 		this.browserName="firefox";
 		this.version="38";
