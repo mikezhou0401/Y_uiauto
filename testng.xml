@@ -3,6 +3,8 @@
     <test name="devops-regress-test">
         <classes>
             <class name="com.zhubajie.qa.testcase.TestApplyProject" />
+            <class name="com.zhubajie.qa.testcase.TestPublishAPI" />
+            <class name="com.zhubajie.qa.testcase.TestRecordProject" />
         </classes>
     </test>
     <!--
