@@ -1,6 +1,6 @@
 点击发布API:
   type:xpath
-  value:"//ul[@id='side-menu']/li[5]/ul/li[1]/a/span"
+  value:"//ul[@id='side-menu']/li[5]/ul/li[2]/a/span"
 输入系统名:
   type:id
   value:search_LIKE_engineName
