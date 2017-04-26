@@ -40,11 +40,14 @@ public class SeleniumDriver {
 			driver = new InternetExplorerDriver(capabilities);
 		}else if("chrome".equals(PropertiesUtil.GetValueByKey("browserType"))){
 			if(PropertiesUtil.GetValueByKey("remoteOrNot").equals("no")){
-				//System.setProperty("webdriver.chrome.driver", "src/test/resources/files/chromedriver.exe");
-				System.setProperty("webdriver.chrome.driver", "/Users/chenggang/Library/chromedriver/chromedriver");
 				ChromeOptions options = new ChromeOptions();
-				//mac
-				options.addArguments("--kiosk");
+				if(System.getProperty("os.name").contains("Mac")){
+					System.setProperty("webdriver.chrome.driver", "/Users/chenggang/Library/chromedriver/chromedriver");
+					options.addArguments("--kiosk");
+				}else{
+					System.setProperty("webdriver.chrome.driver", "src/test/resources/files/chromedriver.exe");
+					options.addArguments("--test-type");
+				}
 				driver = new ChromeDriver(options);
 			}else{
 				DesiredCapabilities capability = null;
