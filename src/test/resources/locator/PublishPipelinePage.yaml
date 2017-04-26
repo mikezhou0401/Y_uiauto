@@ -1,0 +1,19 @@
+点击发布流水线:
+  type:xpath
+  value:"//ul[@id='side-menu']/li[5]/ul/li[3]/a/span"
+输入系统名:
+  type:id
+  value:search_LIKE_engineName
+点击查询:
+  type:id   
+  value:manage-pipelineEngineList-searchbtn
+点击dev:
+  type:id
+  value:pipeline_node_dev
+输入tag:
+  type:id
+  value:devTag
+点击立即构建:
+  type:xpath
+  value:"//div[@id='devModal']/div/div/div[3]/button[2]"
+  
