@@ -205,11 +205,12 @@ public class DBUtil {
 	}
 
 	public static void main(String[] args) {
-		DBUtil.setConnection("test");
+		System.out.println(System.getProperty("os.name"));
+		//DBUtil.setConnection("test");
 		//String sql = "select * from zhubajie_member.mb_account limit 1";
 		//List<Map<String, Object>> lists = DBUtil.queryForList(sql);
 		//System.out.println(lists.toString());
-		String sql = "INSERT INTO zhubajie_qa.qa_ui (id,testcase,`status`,time) VALUES(0,'testLogin','SUCCESS','2017-04-18 18:18:43');";
-		DBUtil.execute(sql);
+		//String sql = "INSERT INTO zhubajie_qa.qa_ui (id,testcase,`status`,time) VALUES(0,'testLogin','SUCCESS','2017-04-18 18:18:43');";
+		//DBUtil.execute(sql);
 	}
 }
