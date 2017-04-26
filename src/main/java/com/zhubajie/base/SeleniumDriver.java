@@ -27,7 +27,6 @@ public class SeleniumDriver {
 	}
 
 	private void initialDriver(){
-		System.out.println("--------initial browser------------");
 		if("firefox".equals(PropertiesUtil.GetValueByKey("browserType"))){
 			System.setProperty("webdriver.firefox.bin",
 					"C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe");
@@ -46,10 +45,13 @@ public class SeleniumDriver {
 					options.addArguments("--kiosk");
 				}else{
 					System.setProperty("webdriver.chrome.driver", "src/test/resources/files/chromedriver.exe");
-					options.addArguments("--test-type");
+					options.addArguments("--user-data-dir=C:/Users/Administrator/AppData/Local/Google/Chrome/User Data/Default");
+					options.addArguments("\"--start-maximized\",\n" +
+							"   \"allow-running-insecure-content\", \"--test-type\"");
 				}
 				driver = new ChromeDriver(options);
 			}else{
+				System.out.println("----------------------该模式为远程执行模式,分布式执行----------------------------------");
 				DesiredCapabilities capability = null;
 				capability = DesiredCapabilities.chrome();
 				RemoteBrowserBean remoteBrowserBean = new RemoteBrowserBean("chrome");
