@@ -45,9 +45,7 @@ public class SeleniumDriver {
 					options.addArguments("--kiosk");
 				}else{
 					System.setProperty("webdriver.chrome.driver", "src/test/resources/files/chromedriver.exe");
-					options.addArguments("--user-data-dir=C:/Users/Administrator/AppData/Local/Google/Chrome/User Data/Default");
-					options.addArguments("\"--start-maximized\",\n" +
-							"   \"allow-running-insecure-content\", \"--test-type\"");
+					options.addArguments("--test-type");
 				}
 				driver = new ChromeDriver(options);
 			}else{
