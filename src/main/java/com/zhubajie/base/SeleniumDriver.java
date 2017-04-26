@@ -12,6 +12,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 
 public class SeleniumDriver {
@@ -52,6 +53,11 @@ public class SeleniumDriver {
 				System.out.println("----------------------该模式为远程执行模式,分布式执行----------------------------------");
 				DesiredCapabilities capability = null;
 				capability = DesiredCapabilities.chrome();
+				capability.setCapability("chrome.switches", Arrays.asList("--incognito"));
+				ChromeOptions options1 = new ChromeOptions();
+				options1.addArguments("--test-type");
+				capability.setCapability(ChromeOptions.CAPABILITY, options1);
+
 				RemoteBrowserBean remoteBrowserBean = new RemoteBrowserBean("chrome");
 				try {
 					driver = new RemoteWebDriver(

@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="suite" parallel="classes" thread-count="2">
-    <test name="devops-regress-test">
+<suite name="suite" parallel="tests" thread-count="2">
+    <test name="TestApplyProject">
         <classes>
             <class name="com.zhubajie.qa.testcase.TestApplyProject" />
+        </classes>
+    </test>
+    <test name="TestPublishAPI">
+        <classes>
             <class name="com.zhubajie.qa.testcase.TestPublishAPI" />
+        </classes>
+    </test>
+    <test name="TestRecordProject">
+        <classes>
             <class name="com.zhubajie.qa.testcase.TestRecordProject" />
         </classes>
     </test>
