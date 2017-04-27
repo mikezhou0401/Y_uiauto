@@ -35,7 +35,21 @@ public class ZBJReport implements IReporter {
             }
         }
         this.sort(list);
+        this.insertReport(list);
         this.outputResult(list, outputDirectory + "/test.txt");
+    }
+
+    /**
+     * 把结果写入到数据库，方便生成报告
+     * @param list
+     */
+    private void insertReport(List<ITestResult> list){
+        System.out.println("*********insertReport***********"+list.size());
+        for (ITestResult result : list) {
+            int costTime = Long.valueOf(result.getEndMillis()-result.getStartMillis()).intValue();
+            String sql = "INSERT INTO zhubajie_qa.qa_ui (id,className,methodName,`status`,time,execTime) VALUES(0,'"+result.getTestClass().getRealClass().getName()+"','"+result.getMethod().getMethodName()+"','"+this.getStatus(result.getStatus())+"',NOW(),"+costTime+");";
+            DBBusiness.update(sql);
+        }
     }
 
     private ArrayList<ITestResult> listTestResult(IResultMap resultMap){
@@ -59,12 +73,11 @@ public class ZBJReport implements IReporter {
         try {
             BufferedWriter output = new BufferedWriter(new FileWriter(new File(path)));
             StringBuffer sb = new StringBuffer();
-            System.out.println("********************"+list.size());
+            System.out.println("******outputResult**************"+list.size());
             for (ITestResult result : list) {
                 if(sb.length()!=0){
                     sb.append("\r\n");
                 }
-                int costTime = Long.valueOf(result.getEndMillis()-result.getStartMillis()).intValue();
                 sb.append(result.getTestClass().getRealClass().getName())
                         .append(" ")
                         .append(result.getMethod().getMethodName())
@@ -74,8 +87,6 @@ public class ZBJReport implements IReporter {
                         .append(result.getEndMillis()-result.getStartMillis())
                         .append("毫秒 ")
                         .append(this.getStatus(result.getStatus()));
-                String sql = "INSERT INTO zhubajie_qa.qa_ui (id,className,methodName,`status`,time,execTime) VALUES(0,'"+result.getTestClass().getRealClass().getName()+"','"+result.getMethod().getMethodName()+"','"+this.getStatus(result.getStatus())+"',NOW(),"+costTime+");";
-                DBBusiness.update(sql);
             }
             output.write(sb.toString());
             output.flush();
