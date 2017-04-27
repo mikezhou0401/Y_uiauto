@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="suite" parallel="tests" thread-count="1">
+<suite name="suite" parallel="tests" thread-count="2">
     <test name="TestPublishAPI">
         <classes>
             <class name="com.zhubajie.qa.testcase.TestPublishAPI" />
