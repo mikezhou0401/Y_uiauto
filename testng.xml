@@ -2,42 +2,13 @@
 <suite name="suite" parallel="classes" thread-count="2">
     <test verbose="2" preserve-order="true" name="DEVOPS">
     <classes>
+       <!--
         <class name="com.zhubajie.qa.testcase.TestPublishAPI" />
-        <class name="com.zhubajie.qa.testcase.TestPublishPipeline" />
+        <class name="com.zhubajie.qa.testcase.TestPublishPipeline" /> -->
+        <class name="com.zhubajie.qa.testcase.TestApplyProject" />
+        <class name="com.zhubajie.qa.testcase.TestRecordProject" />
     </classes>
     </test>
-    <!--
-    <test name="TestPublishAPI">
-        <classes>
-            <class name="com.zhubajie.qa.testcase.TestPublishAPI" />
-        </classes>
-    </test>
-    <test name="TestPublishPipeline">
-        <classes>
-            <class name="com.zhubajie.qa.testcase.TestPublishPipeline" />
-        </classes>
-    </test>-->
-    <!--
-    <test name="TestApplyProject">
-        <classes>
-            <class name="com.zhubajie.qa.testcase.TestApplyProject" />
-        </classes>
-    </test>
-    <test name="TestPublishAPI">
-        <classes>
-            <class name="com.zhubajie.qa.testcase.TestPublishAPI" />
-        </classes>
-    </test>
-    <test name="TestRecordProject">
-        <classes>
-            <class name="com.zhubajie.qa.testcase.TestRecordProject" />
-        </classes>
-    </test>
-    <test name="TestPublishPipeline">
-        <classes>
-            <class name="com.zhubajie.qa.testcase.TestPublishPipeline" />
-        </classes>
-    </test> -->
     <!--
     <listeners>
         <listener class-name="com.zhubajie.report.ZBJReport" />
