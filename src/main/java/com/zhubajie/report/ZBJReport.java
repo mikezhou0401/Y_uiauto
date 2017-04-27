@@ -50,25 +50,10 @@ public class ZBJReport implements IReporter {
      * @param list
      */
     private void insertReport(List<ITestResult> list){
-        System.out.println("*********insertReport***********" + list.size());
         for (ITestResult result : list) {
             int costTime = Long.valueOf(result.getEndMillis()-result.getStartMillis()).intValue();
             String sql = "INSERT INTO zhubajie_qa.qa_ui (id,className,methodName,`status`,time,execTime) VALUES(0,'"+result.getTestClass().getRealClass().getName()+"','"+result.getMethod().getMethodName()+"','"+this.getStatus(result.getStatus())+"',NOW(),"+costTime+");";
             DBBusiness.update(sql);
-            /*
-            if(list.size()==1){
-                int costTime = Long.valueOf(result.getEndMillis()-result.getStartMillis()).intValue();
-                String sql = "INSERT INTO zhubajie_qa.qa_ui (id,className,methodName,`status`,time,execTime) VALUES(0,'"+result.getTestClass().getRealClass().getName()+"','"+result.getMethod().getMethodName()+"','"+this.getStatus(result.getStatus())+"',NOW(),"+costTime+");";
-                DBBusiness.update(sql);
-            }else{
-                num++;
-                if(num==list.size()){
-                    System.out.println("----------------------->"+num+"=========="+list.size());
-                    int costTime = Long.valueOf(result.getEndMillis()-result.getStartMillis()).intValue();
-                    String sql = "INSERT INTO zhubajie_qa.qa_ui (id,className,methodName,`status`,time,execTime) VALUES(0,'"+result.getTestClass().getRealClass().getName()+"','"+result.getMethod().getMethodName()+"','"+this.getStatus(result.getStatus())+"',NOW(),"+costTime+");";
-                    DBBusiness.update(sql);
-                }
-            }*/
         }
     }
 
