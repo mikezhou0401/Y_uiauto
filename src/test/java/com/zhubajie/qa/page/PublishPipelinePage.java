@@ -28,6 +28,7 @@ public class PublishPipelinePage extends Page {
      */
     public void publishPipeline(){
         this.getElement("点击发布流水线").click();
+        DateUtil.sleep(10);
     }
 
     /**
