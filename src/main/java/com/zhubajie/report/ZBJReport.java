@@ -25,7 +25,7 @@ public class ZBJReport implements IReporter {
      */
     public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites, String outputDirectory) {
 
-        System.out.println("------->"+suites.toString());
+        System.out.println("------->"+suites.toArray().toString());
 
         List<ITestResult> list = new ArrayList<ITestResult>();
         for (ISuite suite : suites) {
