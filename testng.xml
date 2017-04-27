@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="suite" parallel="tests" thread-count="2">
+<suite name="suite" parallel="classes" thread-count="2">
+    <test verbose="2" preserve-order="true" name="DEVOPS">
+    <classes>
+        <class name="com.zhubajie.qa.testcase.TestPublishAPI" />
+        <class name="com.zhubajie.qa.testcase.TestPublishPipeline" />
+    </classes>
+    </test>
+    <!--
     <test name="TestPublishAPI">
         <classes>
             <class name="com.zhubajie.qa.testcase.TestPublishAPI" />
@@ -9,7 +16,7 @@
         <classes>
             <class name="com.zhubajie.qa.testcase.TestPublishPipeline" />
         </classes>
-    </test>
+    </test>-->
     <!--
     <test name="TestApplyProject">
         <classes>
