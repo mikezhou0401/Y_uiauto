@@ -57,15 +57,8 @@ public class SeleniumDriver {
 				ChromeOptions options1 = new ChromeOptions();
 				options1.addArguments("--test-type");
 				capability.setCapability(ChromeOptions.CAPABILITY, options1);
-
-				RemoteBrowserBean remoteBrowserBean = new RemoteBrowserBean("chrome");
 				try {
-					driver = new RemoteWebDriver(
-							new URL(remoteBrowserBean.getHubURL()), capability);
-					capability.setBrowserName(remoteBrowserBean.getBrowserName());
-					capability.setVersion(remoteBrowserBean.getVersion());
-					capability.setCapability(remoteBrowserBean.getPlatform()[0],
-					remoteBrowserBean.getPlatform()[1]);
+					driver = new RemoteWebDriver(new URL("http://172.26.8.168:4444/wd/hub"), capability);
 				} catch (MalformedURLException e) {
 					e.printStackTrace();
 				}
