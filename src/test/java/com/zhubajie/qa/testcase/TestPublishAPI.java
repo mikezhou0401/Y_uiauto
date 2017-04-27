@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 import java.util.Map;
 
-@Listeners({com.zhubajie.report.ZBJReport.class,com.zhubajie.listener.TestngListener.class})
+@Listeners({com.zhubajie.report.ZBJReport.class})
 public class TestPublishAPI extends TestBase {
 	@Test(dataProvider="dataDriver",retryAnalyzer = com.zhubajie.listener.TestngRetry.class)
 	public void testPublishAPI(Map<String, String> caseParam){
