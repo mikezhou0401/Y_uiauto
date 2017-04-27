@@ -5,6 +5,11 @@
             <class name="com.zhubajie.qa.testcase.TestPublishAPI" />
         </classes>
     </test>
+    <test name="TestPublishPipeline">
+        <classes>
+            <class name="com.zhubajie.qa.testcase.TestPublishPipeline" />
+        </classes>
+    </test>
     <!--
     <test name="TestApplyProject">
         <classes>
