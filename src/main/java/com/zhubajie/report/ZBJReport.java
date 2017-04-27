@@ -59,6 +59,7 @@ public class ZBJReport implements IReporter {
         try {
             BufferedWriter output = new BufferedWriter(new FileWriter(new File(path)));
             StringBuffer sb = new StringBuffer();
+            System.out.println("********************"+list.size());
             for (ITestResult result : list) {
                 if(sb.length()!=0){
                     sb.append("\r\n");
