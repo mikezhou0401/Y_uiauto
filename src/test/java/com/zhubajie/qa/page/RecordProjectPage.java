@@ -89,7 +89,7 @@ public class RecordProjectPage extends Page {
      */
     public void submit(){
         this.getElement("点击提交").click();
-        DateUtil.sleep(5);
+        DateUtil.sleep(10);
     }
 
     /**
