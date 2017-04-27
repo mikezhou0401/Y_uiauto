@@ -18,7 +18,7 @@
   value:"//select[@id='projectType']/option[4]"
 选择工程类型:
   type:xpath
-  value:"//select[@id='engineType']/option[2]"
+  value:"//select[@id='engineType']/option[3]"
 输入工程GIT地址:
   type:id
   value:gitUrl

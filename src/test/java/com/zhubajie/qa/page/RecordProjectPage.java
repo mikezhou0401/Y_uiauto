@@ -82,6 +82,7 @@ public class RecordProjectPage extends Page {
     public void inputProjectGITGroupName(){
         this.getElement("输入工程GIT地址").sendKeys(PROJECT_GIT_GROUP_NAME);
         DateUtil.sleep(3);
+        this.clickPageDown(1);
     }
 
     /**

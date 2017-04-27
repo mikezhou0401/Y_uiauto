@@ -101,6 +101,7 @@ public class ApplyProjectPage extends Page {
      */
     public void inputProjectGITGroupName(){
         this.getElement("输入PROJECT_GIT_GROUP_NAME").sendKeys(PROJECT_GIT_GROUP_NAME);
+        DateUtil.sleep(1);
     }
 
     /**
@@ -108,6 +109,7 @@ public class ApplyProjectPage extends Page {
      */
     public void inputProjectPhpGroupName(){
         this.getElement("输入PHP_GIT_GROUP_NAME").sendKeys(PHP_GIT_GROUP_NAME);
+        DateUtil.sleep(1);
     }
 
     /**
@@ -115,6 +117,8 @@ public class ApplyProjectPage extends Page {
      */
     public void inputProjectNodeJsGroupName(){
         this.getElement("输入NODEJS_GIT_GROUP_NAME").sendKeys(NODEJS_GIT_GROUP_NAME);
+        DateUtil.sleep(1);
+        this.clickPageDown(1);
     }
 
     /**

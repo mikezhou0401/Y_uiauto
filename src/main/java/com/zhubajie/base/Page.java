@@ -31,4 +31,47 @@ public class Page extends Locator {
 		this.getAction().keyDown(Keys.CONTROL).sendKeys(Keys.ENTER).perform();
 		this.getAction().keyUp(Keys.CONTROL).sendKeys(Keys.ENTER).perform();
 	}
+
+	/**
+	 *
+	 * @Title: clickEND
+	 * @Description:点击END
+	 * @param
+	 * @return void    返回类型
+	 * @throws
+	 */
+	public void clickEND(){
+		this.getAction().keyDown(Keys.CONTROL).sendKeys(Keys.END).perform();
+		this.getAction().keyUp(Keys.CONTROL).sendKeys(Keys.END).perform();
+	}
+
+	/**
+	 *
+	 * @Title: clickPageUp
+	 * @Description:向上翻页
+	 * @param @param count    设定文件
+	 * @return void    返回类型
+	 * @throws
+	 */
+	public void clickPageUp(int count){
+		for(int i=0;i<count;i++){
+			this.getAction().keyDown(Keys.CONTROL).sendKeys(Keys.PAGE_UP).perform();
+			this.getAction().keyUp(Keys.CONTROL).sendKeys(Keys.PAGE_UP).perform();
+		}
+	}
+
+	/**
+	 *
+	 * @Title: clickPageDown
+	 * @Description:向下翻页
+	 * @param
+	 * @return void    返回类型
+	 * @throws
+	 */
+	public void clickPageDown(int count){
+		for(int i=0;i<count;i++){
+			this.getAction().keyDown(Keys.CONTROL).sendKeys(Keys.PAGE_DOWN).perform();
+			this.getAction().keyUp(Keys.CONTROL).sendKeys(Keys.PAGE_DOWN).perform();
+		}
+	}
 }
