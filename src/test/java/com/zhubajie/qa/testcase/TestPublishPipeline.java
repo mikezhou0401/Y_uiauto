@@ -12,7 +12,7 @@ import java.util.Map;
 
 @Listeners({com.zhubajie.report.ZBJReport.class})
 public class TestPublishPipeline extends TestBase {
-	@Test(dataProvider="dataDriver",retryAnalyzer = com.zhubajie.listener.TestngRetry.class)
+	@Test(dataProvider="dataDriver")
 	public void testPublishPipeline(Map<String, String> caseParam){
 			this.goTo(caseParam.get("url"));
 			LoginPage loginpage = new LoginPage(driver);
