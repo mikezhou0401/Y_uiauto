@@ -1,6 +1,7 @@
 package com.zhubajie.qa.page;
 
 import com.zhubajie.base.Page;
+import com.zhubajie.util.DateUtil;
 import org.openqa.selenium.WebDriver;
 
 /**
@@ -30,5 +31,6 @@ public class MenuPage extends Page {
      */
     public void buildMgt(){
         this.getElement("点击构建管理").click();
+        DateUtil.sleep(10);
     }
 }
