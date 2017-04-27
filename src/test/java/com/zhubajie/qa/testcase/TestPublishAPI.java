@@ -13,7 +13,6 @@ import java.util.Map;
 public class TestPublishAPI extends TestBase {
 	@Test(dataProvider="dataDriver",retryAnalyzer = com.zhubajie.listener.TestngRetry.class)
 	public void testPublishAPI(Map<String, String> caseParam){
-		try {
 			this.goTo(caseParam.get("url"));
 			LoginPage loginpage = new LoginPage(driver);
 			loginpage.login(caseParam.get("username"), caseParam.get("password"));
@@ -25,8 +24,5 @@ public class TestPublishAPI extends TestBase {
 			publishAPIPage.query();
 			publishAPIPage.selectBranch();
 			publishAPIPage.publish();
-		} catch (Exception e) {
-			System.out.println("---出错了，赶紧检查---");
-		}
 	}
 }
