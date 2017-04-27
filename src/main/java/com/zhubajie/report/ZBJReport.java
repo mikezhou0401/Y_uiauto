@@ -58,7 +58,12 @@ public class ZBJReport implements IReporter {
                 DBBusiness.update(sql);
             }else{
                 num++;
-                System.out.println("----------------------->"+num);
+                if(num==list.size()){
+                    System.out.println("----------------------->"+num+"=========="+list.size());
+                    int costTime = Long.valueOf(result.getEndMillis()-result.getStartMillis()).intValue();
+                    String sql = "INSERT INTO zhubajie_qa.qa_ui (id,className,methodName,`status`,time,execTime) VALUES(0,'"+result.getTestClass().getRealClass().getName()+"','"+result.getMethod().getMethodName()+"','"+this.getStatus(result.getStatus())+"',NOW(),"+costTime+");";
+                    DBBusiness.update(sql);
+                }
             }
         }
     }
