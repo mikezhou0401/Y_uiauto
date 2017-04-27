@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="suite" parallel="tests" thread-count="2">
+    <test name="TestPublishAPI">
+        <classes>
+            <class name="com.zhubajie.qa.testcase.TestPublishAPI" />
+        </classes>
+    </test>
+    <!--
     <test name="TestApplyProject">
         <classes>
             <class name="com.zhubajie.qa.testcase.TestApplyProject" />
@@ -19,7 +25,7 @@
         <classes>
             <class name="com.zhubajie.qa.testcase.TestPublishPipeline" />
         </classes>
-    </test>
+    </test> -->
     <!--
     <listeners>
         <listener class-name="com.zhubajie.report.ZBJReport" />
