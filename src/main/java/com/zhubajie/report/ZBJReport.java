@@ -17,6 +17,7 @@ import java.util.*;
  */
 
 public class ZBJReport implements IReporter {
+    private int num = 0;
     /**
      * 生成报告
      * @param xmlSuites
@@ -24,9 +25,6 @@ public class ZBJReport implements IReporter {
      * @param outputDirectory
      */
     public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites, String outputDirectory) {
-
-        System.out.println("------->"+suites.toArray().toString());
-
         List<ITestResult> list = new ArrayList<ITestResult>();
         for (ISuite suite : suites) {
             Map<String, ISuiteResult> suiteResults = suite.getResults();
@@ -54,9 +52,14 @@ public class ZBJReport implements IReporter {
     private void insertReport(List<ITestResult> list){
         System.out.println("*********insertReport***********" + list.size());
         for (ITestResult result : list) {
-            int costTime = Long.valueOf(result.getEndMillis()-result.getStartMillis()).intValue();
-            String sql = "INSERT INTO zhubajie_qa.qa_ui (id,className,methodName,`status`,time,execTime) VALUES(0,'"+result.getTestClass().getRealClass().getName()+"','"+result.getMethod().getMethodName()+"','"+this.getStatus(result.getStatus())+"',NOW(),"+costTime+");";
-            DBBusiness.update(sql);
+            if(list.size()==1){
+                int costTime = Long.valueOf(result.getEndMillis()-result.getStartMillis()).intValue();
+                String sql = "INSERT INTO zhubajie_qa.qa_ui (id,className,methodName,`status`,time,execTime) VALUES(0,'"+result.getTestClass().getRealClass().getName()+"','"+result.getMethod().getMethodName()+"','"+this.getStatus(result.getStatus())+"',NOW(),"+costTime+");";
+                DBBusiness.update(sql);
+            }else{
+                num++;
+                System.out.println("----------------------->"+num);
+            }
         }
     }
 
@@ -90,7 +93,6 @@ public class ZBJReport implements IReporter {
         try {
             BufferedWriter output = new BufferedWriter(new FileWriter(new File(path)));
             StringBuffer sb = new StringBuffer();
-            System.out.println("******outputResult**************"+list.size());
             for (ITestResult result : list) {
                 if(sb.length()!=0){
                     sb.append("\r\n");
