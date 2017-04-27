@@ -2,9 +2,8 @@
 <suite name="suite" parallel="classes" thread-count="2">
     <test verbose="2" preserve-order="true" name="DEVOPS">
     <classes>
-       <!--
         <class name="com.zhubajie.qa.testcase.TestPublishAPI" />
-        <class name="com.zhubajie.qa.testcase.TestPublishPipeline" /> -->
+        <class name="com.zhubajie.qa.testcase.TestPublishPipeline" />
         <class name="com.zhubajie.qa.testcase.TestApplyProject" />
         <class name="com.zhubajie.qa.testcase.TestRecordProject" />
     </classes>
