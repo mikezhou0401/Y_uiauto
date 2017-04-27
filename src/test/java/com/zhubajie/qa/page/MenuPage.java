@@ -24,6 +24,7 @@ public class MenuPage extends Page {
      */
     public void projectMgt(){
         this.getElement("点击工程管理").click();
+        DateUtil.sleep(10);
     }
 
     /**
