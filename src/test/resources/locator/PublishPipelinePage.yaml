@@ -7,6 +7,9 @@
 点击查询:
   type:id   
   value:manage-pipelineEngineList-searchbtn
+点击发布流水线按钮:
+  type:xpath
+  value:"//table[@id='manage-pipelineEngineList-datagrid']/tbody/tr[1]/td[4]/a"
 点击dev:
   type:id
   value:pipeline_node_dev

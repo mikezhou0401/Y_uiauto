@@ -23,6 +23,7 @@ public class TestPublishPipeline extends TestBase {
 			publishPipelinePage.publishPipeline();
 			publishPipelinePage.inputEngineName();
 			publishPipelinePage.query();
+			publishPipelinePage.releasePipelineClick();
 			publishPipelinePage.devClick();
 			publishPipelinePage.inputTagName();
 			publishPipelinePage.queryStructure();

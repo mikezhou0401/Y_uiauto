@@ -46,6 +46,13 @@ public class PublishPipelinePage extends Page {
     }
     
     /**
+     * 点击发布流水线
+     */
+    public void releasePipelineClick(){
+        this.getElement("点击发布流水线按钮").click();
+      //  DateUtil.sleep(5);
+    }
+    /**
      * 点击dev
      */
     public void devClick(){
