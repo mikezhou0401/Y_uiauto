@@ -1,6 +1,7 @@
 package com.zhubajie.report;
 
 import com.zhubajie.util.DBBusiness;
+import com.zhubajie.util.DateUtil;
 import org.testng.*;
 import org.testng.xml.XmlSuite;
 
@@ -52,7 +53,7 @@ public class ZBJReport implements IReporter {
     private void insertReport(List<ITestResult> list){
         for (ITestResult result : list) {
             int costTime = Long.valueOf(result.getEndMillis()-result.getStartMillis()).intValue();
-            String sql = "INSERT INTO zhubajie_qa.qa_ui (id,className,methodName,`status`,time,execTime) VALUES(0,'"+result.getTestClass().getRealClass().getName()+"','"+result.getMethod().getMethodName()+"','"+this.getStatus(result.getStatus())+"',NOW(),"+costTime+");";
+            String sql = "INSERT INTO zhubajie_qa.qa_ui (id,className,methodName,`status`,time,execTime) VALUES(0,'"+result.getTestClass().getRealClass().getName()+"','"+result.getMethod().getMethodName()+"','"+this.getStatus(result.getStatus())+"',NOW(),"+costTime+","+ DateUtil.getYMD()+");";
             DBBusiness.update(sql);
         }
     }
