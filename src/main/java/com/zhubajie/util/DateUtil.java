@@ -153,6 +153,15 @@ public class DateUtil {
 	}
 
 	/**
+	 * 返回当前年月日
+	 * @return
+	 */
+	public static String getYMD(){
+		SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");
+		return df.format(new Date());
+	}
+
+	/**
 	 * 返回当前时间戳
 	 * @return
 	 */
