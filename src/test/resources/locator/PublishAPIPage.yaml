@@ -7,6 +7,9 @@
 点击查询:
   type:id
   value:manage-engineManageInfo-searchbtn
+点击发布API按钮:
+  type:xpath
+  value:"//table[@id='manage-engineManageInfo-datagrid']/tbody/tr/td[4]/a"
 选择分支:
   type:id
   value:select2-manage-select2-branches-container

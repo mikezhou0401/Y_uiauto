@@ -22,6 +22,7 @@ public class TestPublishAPI extends TestBase {
 			publishAPIPage.publishApi();
 			publishAPIPage.inputEngineName();
 			publishAPIPage.query();
+			publishAPIPage.clickPublishButton();
 			publishAPIPage.selectBranch();
 			publishAPIPage.publish();
 	}

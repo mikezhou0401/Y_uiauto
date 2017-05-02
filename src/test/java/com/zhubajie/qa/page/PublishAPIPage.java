@@ -47,6 +47,14 @@ public class PublishAPIPage extends Page {
     }
 
     /**
+     *点击发布API按钮
+     */
+    public void clickPublishButton(){
+        this.getElement("点击发布API按钮").click();
+        DateUtil.sleep(3);
+    }
+
+    /**
      * 选择分支
      */
     public void selectBranch(){
