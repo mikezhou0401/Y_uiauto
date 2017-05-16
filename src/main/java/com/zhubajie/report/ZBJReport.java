@@ -2,6 +2,7 @@ package com.zhubajie.report;
 
 import com.zhubajie.util.DBBusiness;
 import com.zhubajie.util.DateUtil;
+import com.zhubajie.util.PropertiesUtil;
 import org.testng.*;
 import org.testng.xml.XmlSuite;
 
@@ -42,7 +43,10 @@ public class ZBJReport implements IReporter {
             }
         }
         this.sort(list);
-        this.insertReport(list);
+        //两种模式yes需要日志no不需要日志
+        if(PropertiesUtil.GetValueByKey("isLog").contains("yes")){
+            this.insertReport(list);
+        }
         //this.outputResult(list, outputDirectory + "/test.txt");
     }
 
