@@ -1,6 +1,7 @@
 ### Maven template
 target/
 .idea/
+.svn/
 test-output/
 *.iml
 *.log

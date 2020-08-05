@@ -1,0 +1,13 @@
+
+输入用户名:
+  type: css
+  value: #root > div > div.body__lCzT4 > div > div > form > div:nth-child(1) > div > div > span > span > input
+输入密码:
+  type: css
+  value: #root > div > div.body__lCzT4 > div > div > form > div:nth-child(2) > div > div > span > span > input
+输入验证码:
+  type: css
+  value: #root > div > div.body__lCzT4 > div > div > form > div:nth-child(3) > div > div > span > span > input
+点击登陆:
+  type: css
+  value: #root > div > div.body__lCzT4 > div > div > form > div:nth-child(4) > div > div > span > div > button

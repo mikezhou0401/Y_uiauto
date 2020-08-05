@@ -1,0 +1,46 @@
+
+单行文本:
+  type: id
+  value: 6217
+单行文本联动:
+  type: id
+  value: 6219
+单行文本2:
+  type: id
+  value: 7847
+提 交:
+  type: partialLinkText
+  value: 提 交
+正负值按钮:
+  type: className
+  value: am-switch
+引用对象:
+  type: xpath
+  value: //*[@id="__next"]/div[2]/div[1]/div/div[18]/div/div/div[2]
+部门1:
+  type: xpath
+  value: //*[@id="__next"]/div[2]/div[1]/div/div[20]/div/div/div[2]
+部门2:
+  type: xpath
+  value: //*[@id="__next"]/div[2]/div[1]/div/div[21]/div/div/div[2]
+多行文本:
+  type: tagName
+  value: textarea
+单选:
+  type: className
+  value: select
+日期:
+  type: xpath
+  value: //*[@id="__next"]/div[2]/div[1]/div/div[10]/div/div/div[2]
+日期时间:
+  type: xpath
+  value: //*[@id="__next"]/div[2]/div[1]/div/div[11]/div/div/div[2]
+数值:
+  type: className
+  value: fake-input-container
+单选选项:
+  type: className
+  value: picker-popup-content-list-text
+已勾选项:
+  type: className
+  value: biz-form-radio-checked

@@ -1,0 +1,10 @@
+
+操作:
+  type: xpath
+  value: //*[@id="__next"]/div[2]/div[1]/div/div[2]/div[2]/div
+编辑:
+  type: xpath
+  value: //*[@id="__next"]/div[2]/div[1]/div/div[1]/div[3]/div[1]
+删除:
+  type: xpath
+  value: //*[@id="__next"]/div[2]/div[1]/div/div[1]/div[3]/div[2]

@@ -2,13 +2,12 @@
 <suite name="suite" parallel="classes" thread-count="2">
     <test verbose="2" preserve-order="true" name="DEVOPS">
     <classes>
-        <class name="com.zhubajie.qa.testcase.TestRecordProject" />
+        <class name="com.yunsom.qa.testcase.TestRecordProject" />
     </classes>
     </test>
-    <!--
     <listeners>
-        <listener class-name="com.zhubajie.report.ZBJReport" />
-        <listener class-name="com.zhubajie.listener.TestngListener" />
-        <listener class-name="com.zhubajie.listener.TestngRetry" />
-    </listeners> -->
+        <listener class-name="com.yunsom.report.YunsomReport" />
+        <listener class-name="com.yunsom.listener.TestngListener" />
+        <listener class-name="com.yunsom.listener.TestngRetry" />
+    </listeners>
 </suite>
