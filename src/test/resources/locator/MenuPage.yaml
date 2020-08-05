@@ -1,6 +1,0 @@
-点击工程管理:
-  type:xpath
-  value:"//ul[@id='side-menu']/li[4]/a"
-点击构建管理:
-  type:xpath
-  value:"//ul[@id='side-menu']/li[5]/a/span[1]"
