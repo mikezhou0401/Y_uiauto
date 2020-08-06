@@ -3,6 +3,7 @@ package com.yunsom.base;
 import com.yunsom.util.Log;
 import com.yunsom.util.PropertiesUtil;
 import org.ho.yaml.Yaml;
+import org.jetbrains.annotations.NotNull;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -30,7 +31,6 @@ public class Locator {
     }
 
     public void setYamlFile(String yamlFile) {
-
         this.yamlFile = yamlFile;
     }
 
@@ -50,6 +50,49 @@ public class Locator {
         }
     }
 
+
+    public WebElement getElement(String key) {
+        Log.logInfo(key);
+        return this.getLocator(key, true);
+    }
+
+
+    public List<WebElement> getElements(String key) {
+        Log.logInfo(key);
+        return this.getLocators(key, true);
+    }
+
+    private WebElement getLocator(String key, boolean wait) {
+
+        WebElement element = null;
+        if (ml.containsKey(key)) {
+            Map<String, String> m = ml.get(key);
+            String type = m.get("type");
+            String value = m.get("value");
+            By by = this.getBy(type, value);
+            element = this.watiForElement(by, key);
+        } else {
+            Log.logError("检查元素" + key + "是否存在," + "Locator " + key + " is not exist in "
+                    + yamlFile + ".yaml");
+        }
+        return element;
+    }
+
+    private List<WebElement> getLocators(String key, boolean wait) {
+        List<WebElement> elements = null;
+        if (ml.containsKey(key)) {
+            Map<String, String> m = ml.get(key);
+            String type = m.get("type");
+            String value = m.get("value");
+            By by = this.getBy(type, value);
+            elements = this.watiForElements(by, key);
+        } else {
+            Log.logError("检查元素" + key + "是否存在," + "Locator " + key + " is not exist in "
+                    + yamlFile + ".yaml");
+        }
+        return elements;
+    }
+
     /**
      * @param @param  type
      * @param @param  value
@@ -59,27 +102,27 @@ public class Locator {
      * @Title: getBy
      * @Description:封装BY操作
      */
-    private By getBy(String type, String value) {
-        By by = null;
-        if (type.equals("id")) {
-            by = By.id(value);
+    private By getBy(@NotNull String type, String value) {
+        switch (type) {
+            case "id":
+                return By.id(value);
+            case "linkText":
+                return By.linkText(value);
+            case "partialLinkText":
+                return By.partialLinkText(value);
+            case "name":
+                return By.name(value);
+            case "tagName":
+                return By.tagName(value);
+            case "xpath":
+                return By.xpath(value);
+            case "className":
+                return By.className(value);
+            case "cssSelector":
+                return By.cssSelector(value);
+            default:
+                return null;
         }
-        if (type.equals("name")) {
-            by = By.name(value);
-        }
-        if (type.equals("xpath")) {
-            by = By.xpath(value);
-        }
-        if (type.equals("className")) {
-            by = By.className(value);
-        }
-        if (type.equals("linkText")) {
-            by = By.linkText(value);
-        }
-        if (type.equals("css")) {
-            by = By.cssSelector(value);
-        }
-        return by;
     }
 
     /**
@@ -116,47 +159,6 @@ public class Locator {
                     });
         } catch (Exception e) {
             Log.logError(waitTime + "s等待" + key + "元素超时...");
-        }
-        return elements;
-    }
-
-    public WebElement getElement(String key) {
-        Log.logInfo(key);
-        return this.getLocator(key, true);
-    }
-
-    public List<WebElement> getElements(String key) {
-        Log.logInfo(key);
-        return this.getLocators(key, true);
-    }
-
-    private WebElement getLocator(String key, boolean wait) {
-
-        WebElement element = null;
-        if (ml.containsKey(key)) {
-            Map<String, String> m = ml.get(key);
-            String type = m.get("type");
-            String value = m.get("value");
-            By by = this.getBy(type, value);
-            element = this.watiForElement(by, key);
-        } else {
-            Log.logError("检查元素" + key + "是否存在," + "Locator " + key + " is not exist in "
-                    + yamlFile + ".yaml");
-        }
-        return element;
-    }
-
-    private List<WebElement> getLocators(String key, boolean wait) {
-        List<WebElement> elements = null;
-        if (ml.containsKey(key)) {
-            Map<String, String> m = ml.get(key);
-            String type = m.get("type");
-            String value = m.get("value");
-            By by = this.getBy(type, value);
-            elements = this.watiForElements(by, key);
-        } else {
-            Log.logError("检查元素" + key + "是否存在," + "Locator " + key + " is not exist in "
-                    + yamlFile + ".yaml");
         }
         return elements;
     }

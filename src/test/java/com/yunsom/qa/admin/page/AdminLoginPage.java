@@ -18,7 +18,6 @@ public class AdminLoginPage extends Page {
 	 * @param pwd
 	 */
 	public void adminLogin(String name,String pwd){
-		this.getElement("输入用户名").click();
 		this.getElement("输入用户名").sendKeys(name);
 		this.getElement("输入密码").sendKeys(pwd);
 		this.getElement("输入验证码").sendKeys("0000");

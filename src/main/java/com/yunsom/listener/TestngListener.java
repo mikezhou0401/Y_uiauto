@@ -1,6 +1,6 @@
 package com.yunsom.listener;
 
-import com.yunsom.base.TestBase;
+import com.yunsom.base.BaseAction;
 import com.yunsom.screenshot.ScreenShot;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
@@ -27,7 +27,7 @@ public class TestngListener extends TestListenerAdapter {
 	 */
 	@Override
 	public void onTestFailure(ITestResult tr) {
-		TestBase tb = (TestBase) tr.getInstance();
+		BaseAction tb = (BaseAction) tr.getInstance();
 		WebDriver driver = tb.getDriver();
 		new ScreenShot(driver).takeScreenshot();
 	}
@@ -41,7 +41,7 @@ public class TestngListener extends TestListenerAdapter {
 	 */
 	@Override
 	public void onTestSkipped(ITestResult tr) {
-		TestBase tb = (TestBase) tr.getInstance();
+		BaseAction tb = (BaseAction) tr.getInstance();
 		WebDriver driver = tb.getDriver();
 		new ScreenShot(driver).takeScreenshot();
 	}

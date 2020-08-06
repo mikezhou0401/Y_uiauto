@@ -1,7 +1,6 @@
 package com.yunsom.qa.app.testcase;
 
-import com.yunsom.base.AppPage;
-import com.yunsom.base.TestBase;
+import com.yunsom.base.BaseAction;
 import com.yunsom.qa.app.page.APPEditPage;
 import com.yunsom.qa.app.page.InstanceListPage;
 import com.yunsom.report.YunsomReport;
@@ -14,13 +13,13 @@ import java.util.Map;
 
 
 @Listeners({YunsomReport.class, com.yunsom.listener.TestngListener.class})
-public class DemoTest extends TestBase {
+public class DemoTest extends BaseAction {
 
     @Test(dataProvider = "dataDriver", retryAnalyzer = com.yunsom.listener.TestngRetry.class)
     public void test(Map<String, String> caseParam) {
 
         //进入实例列表
-        this.goTo(PropertiesUtil.GetValueByKey("InstanceListPageURL"));
+        this.open(PropertiesUtil.GetValueByKey("InstanceListPageURL"));
         InstanceListPage instanceListPage = new InstanceListPage(driver);
         instanceListPage.refresh();
         instanceListPage.add().click();
@@ -29,39 +28,39 @@ public class DemoTest extends TestBase {
         APPEditPage appEditPage = new APPEditPage(driver);
 
         //单行
-        appEditPage.field1.sendKeys("文本1");
-        appEditPage.field2.sendKeys("文本2");
-        appEditPage.field3.sendKeys("文本3");
+        appEditPage.field1().sendKeys("文本1");
+        appEditPage.field2().sendKeys("文本2");
+        appEditPage.field3().sendKeys("文本3");
 
         //多行
-        for (WebElement element : appEditPage.multiline) {
+        for (WebElement element : appEditPage.multiline()) {
             element.sendKeys("是非得失辅导辅导费");
         }
 
         //单选(下拉单选自定义、下拉单选关联、人员单选)
-        for (WebElement element : appEditPage.singleSelectLists) {
+        for (WebElement element : appEditPage.singleSelectLists()) {
             element.click();
-            appEditPage.selectOption.get(0).click();
+            appEditPage.selectOption().click();
         }
 
-        appEditPage.date1.click();
+        appEditPage.date1().click();
         appEditPage.date().get(1).click();
 
-        appEditPage.date2.click();
+        appEditPage.date2().click();
         appEditPage.date().get(1).click();
 
 
         /**
          * 正负数
          **/
-        for (WebElement webElement : appEditPage.switch_) {
+        for (WebElement webElement : appEditPage.switch_()) {
             webElement.click();
         }
 
         /**
          * 输入数值
          **/
-        for (WebElement webElement : appEditPage.numbers) {
+        for (WebElement webElement : appEditPage.numbers()) {
             webElement.click();
             for (int i = 0; i < webElement.getText().length(); i++) {
                 appEditPage.keypad().get(12).click();
@@ -74,27 +73,27 @@ public class DemoTest extends TestBase {
          * 引用对象
          **/
 
-        appEditPage.reference.click();
+        appEditPage.reference().click();
         appEditPage.roundOption().click();
         appEditPage.sure().click();
 
         /**
          * 部门单
          **/
-        appEditPage.department1.click();
+        appEditPage.department1().click();
         appEditPage.roundOption().click();
         appEditPage.sure().click();
 
         /**
          * 部门多
          **/
-        appEditPage.department2.click();
+        appEditPage.department2().click();
         appEditPage.roundOption().click();
         appEditPage.sure().click();
 
         /**
          * 提交
          **/
-        appEditPage.submit.click();
+        appEditPage.submit().click();
     }
 }
