@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="659719cc-7281-4755-a330-124e26119489" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/locator/AppPage.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yunsom/base/AppPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yunsom/base/AppPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yunsom/base/BaseAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yunsom/base/BaseAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yunsom/listener/DotTestListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yunsom/listener/RetryListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yunsom/listener/TestngRetry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yunsom/listener/TestngRetry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yunsom/screenshot/ScreenShot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yunsom/screenshot/ScreenShot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/yunsom/qa/app/page/APPEditPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/yunsom/qa/app/page/AppEditPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/yunsom/qa/app/testcase/DemoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/yunsom/qa/app/testcase/DemoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/locator/APPEditPage.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/locator/AppEditPage.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/locator/AdminLoginPage.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/locator/AdminLoginPage.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/locator/DetailPage.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/locator/DetailPage.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testdata/TestRecordProject.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testdata/RecordProjectTest.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,12 +91,24 @@
       <updated>1595920832637</updated>
       <workItem from="1595920834649" duration="37000" />
       <workItem from="1596783622082" duration="1029000" />
-      <workItem from="1596785141028" duration="825000" />
+      <workItem from="1596785141028" duration="1530000" />
     </task>
+    <task id="LOCAL-00001" summary="2020.8.7">
+      <created>1596790239580</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1596790239580</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="2020.8.7" />
+    <option name="LAST_COMMIT_MESSAGE" value="2020.8.7" />
   </component>
   <component name="WindowStateProjectService">
     <state x="255" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596784844143">
@@ -122,6 +119,14 @@
       <screen x="0" y="0" width="1603" height="862" />
     </state>
     <state x="530" y="213" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1603.862/1920.0.1603.862@0.0.1603.862" timestamp="1596784841483" />
+    <state x="372" y="22" key="CommitChangelistDialog2" timestamp="1596790238254">
+      <screen x="0" y="0" width="1603" height="862" />
+    </state>
+    <state x="372" y="22" key="CommitChangelistDialog2/0.0.1603.862/1920.0.1603.862@0.0.1603.862" timestamp="1596790238254" />
+    <state x="152" y="68" key="DiffContextDialog" timestamp="1596790222269">
+      <screen x="0" y="0" width="1603" height="862" />
+    </state>
+    <state x="152" y="68" key="DiffContextDialog/0.0.1603.862/1920.0.1603.862@0.0.1603.862" timestamp="1596790222269" />
     <state x="581" y="185" key="FileChooserDialogImpl" timestamp="1596789993314">
       <screen x="0" y="0" width="1603" height="862" />
     </state>
@@ -166,14 +171,14 @@
       <screen x="0" y="0" width="1603" height="862" />
     </state>
     <state x="302" y="73" key="SettingsEditor/0.0.1603.862/1920.0.1603.862@0.0.1603.862" timestamp="1596783816234" />
-    <state x="393" y="163" key="Vcs.Push.Dialog.v2" timestamp="1596790113868">
+    <state x="393" y="163" key="Vcs.Push.Dialog.v2" timestamp="1596790744956">
       <screen x="0" y="0" width="1603" height="862" />
     </state>
-    <state x="393" y="163" key="Vcs.Push.Dialog.v2/0.0.1603.862/1920.0.1603.862@0.0.1603.862" timestamp="1596790113868" />
-    <state x="488" y="254" key="com.intellij.ide.util.TipDialog" timestamp="1596785141627">
+    <state x="393" y="163" key="Vcs.Push.Dialog.v2/0.0.1603.862/1920.0.1603.862@0.0.1603.862" timestamp="1596790744956" />
+    <state x="488" y="254" key="com.intellij.ide.util.TipDialog" timestamp="1596790798127">
       <screen x="0" y="0" width="1603" height="862" />
     </state>
-    <state x="488" y="254" key="com.intellij.ide.util.TipDialog/0.0.1603.862/1920.0.1603.862@0.0.1603.862" timestamp="1596785141627" />
+    <state x="488" y="254" key="com.intellij.ide.util.TipDialog/0.0.1603.862/1920.0.1603.862@0.0.1603.862" timestamp="1596790798127" />
   </component>
   <component name="masterDetails">
     <states>
