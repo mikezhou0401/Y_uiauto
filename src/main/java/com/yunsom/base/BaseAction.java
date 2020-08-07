@@ -125,6 +125,14 @@ public class BaseAction {
     public void setCookie(String key, String value) {
         Cookie c = new Cookie(key, value);
         driver.manage().addCookie(c);
-        Log.logInfo("添加cookie:" + key +":"+ value);
+        Log.logInfo("添加cookie:" + key + ":" + value);
+    }
+
+    public void sleep(int time) {
+        try {
+            Thread.sleep(time);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }

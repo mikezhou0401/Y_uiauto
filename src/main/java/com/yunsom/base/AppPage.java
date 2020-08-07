@@ -83,7 +83,7 @@ public class AppPage extends Page {
     }
 
     /**
-     * 数字键盘 //todo
+     * 数字键盘
      */
     public List<WebElement> keypad() {
         List<WebElement> lists = new LinkedList<>();
@@ -103,4 +103,17 @@ public class AppPage extends Page {
         lists.add(driver.findElement(By.cssSelector("#am-number-keyboard-container > div > table > tbody > tr:nth-child(3) > td:nth-child(4)")));//确定
         return lists;
     }
+
+    public List<WebElement> selectOption() {
+        return this.getElements("单选选项");
+    }
+
+    /**
+     * 单选的打钩项
+     */
+
+    public WebElement checked() {
+        return this.getElement("已勾选项");
+    }
+
 }

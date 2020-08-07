@@ -6,8 +6,8 @@ import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
-public class APPEditPage extends AppPage {
-    public APPEditPage(WebDriver driver) {
+public class AppEditPage extends AppPage {
+    public AppEditPage(WebDriver driver) {
         super(driver);
     }
 
@@ -64,13 +64,7 @@ public class APPEditPage extends AppPage {
         return this.getElements("数值");
     }
 
-    public WebElement selectOption() {
-        return this.getElement("单选选项");
-    }
 
-    public WebElement checked() {
-        return this.getElement("已勾选项");
-    }
 
 
 }

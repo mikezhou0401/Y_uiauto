@@ -13,7 +13,7 @@ import org.testng.Reporter;
 
  *
  */
-public class TestngRetry implements IRetryAnalyzer {
+public class TestngRetry implements IRetryAnalyzer  {
 	// 默认次数
 	private int retryCount = 1;
 	// 最大次数

@@ -1,0 +1,6 @@
+单选选项:
+  type: className
+  value: picker-popup-content-list-text
+已勾选项:
+  type: className
+  value: biz-form-radio-checked

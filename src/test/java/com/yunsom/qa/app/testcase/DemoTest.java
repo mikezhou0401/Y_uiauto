@@ -1,7 +1,8 @@
 package com.yunsom.qa.app.testcase;
 
+import com.yunsom.base.AppPage;
 import com.yunsom.base.BaseAction;
-import com.yunsom.qa.app.page.APPEditPage;
+import com.yunsom.qa.app.page.AppEditPage;
 import com.yunsom.qa.app.page.InstanceListPage;
 import com.yunsom.report.YunsomReport;
 import com.yunsom.util.PropertiesUtil;
@@ -23,9 +24,9 @@ public class DemoTest extends BaseAction {
         InstanceListPage instanceListPage = new InstanceListPage(driver);
         instanceListPage.refresh();
         instanceListPage.add().click();
+        sleep(1000);
 
-
-        APPEditPage appEditPage = new APPEditPage(driver);
+        AppEditPage appEditPage = new AppEditPage(driver);
 
         //单行
         appEditPage.field1().sendKeys("文本1");
@@ -40,7 +41,7 @@ public class DemoTest extends BaseAction {
         //单选(下拉单选自定义、下拉单选关联、人员单选)
         for (WebElement element : appEditPage.singleSelectLists()) {
             element.click();
-            appEditPage.selectOption().click();
+            new AppPage(driver).selectOption().get(0).click();
         }
 
         appEditPage.date1().click();
@@ -74,6 +75,7 @@ public class DemoTest extends BaseAction {
          **/
 
         appEditPage.reference().click();
+        sleep(1000);
         appEditPage.roundOption().click();
         appEditPage.sure().click();
 
