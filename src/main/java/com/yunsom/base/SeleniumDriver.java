@@ -42,8 +42,7 @@ public class SeleniumDriver {
             if (PropertiesUtil.GetValueByKey("remoteOrNot").equals("no")) {
                 ChromeOptions options = new ChromeOptions();
                 if (System.getProperty("os.name").contains("Mac")) {
-                    //System.setProperty("webdriver.chrome.driver", "/Users/chenggang/Library/chromedriver/chromedriver");
-                    System.setProperty("webdriver.chrome.driver", PropertiesUtil.GetValueByKey("macChromePath"));
+                    System.setProperty("webdriver.chrome.driver", "src/test/resources/files/chromedriver");
                     options.addArguments("--kiosk");
                 } else {
                     System.setProperty("webdriver.chrome.driver", "src/test/resources/files/chromedrivernew.exe");
