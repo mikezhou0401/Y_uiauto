@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="659719cc-7281-4755-a330-124e26119489" name="Default Changelist" comment="">
+    <list default="true" id="659719cc-7281-4755-a330-124e26119489" name="Default Changelist" comment="2020.8.10  远程调用">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yunsom/base/RemoteStorageWebDriver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yunsom/base/AppPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yunsom/base/AppPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yunsom/base/BaseAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yunsom/base/BaseAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yunsom/base/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yunsom/base/Page.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yunsom/base/SeleniumDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yunsom/base/SeleniumDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/yunsom/qa/admin/testcase/RecordProjectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/yunsom/qa/admin/testcase/RecordProjectTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/yunsom/qa/app/testcase/DemoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/yunsom/qa/app/testcase/DemoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="CompilerWorkspaceConfiguration">
     <option name="MAKE_PROJECT_ON_SAVE" value="true" />
@@ -24,6 +25,13 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -58,12 +66,12 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
-  <component name="RunManager" selected="TestNG.RecordProjectTest.testLogin">
+  <component name="RunManager" selected="TestNG.test">
     <configuration name="Y_uiauto []" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -87,46 +95,10 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
-    <configuration name="DemoTest.test" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Y_uiauto" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yunsom.qa.app.testcase.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.yunsom.qa.app.testcase" />
-      <option name="MAIN_CLASS_NAME" value="com.yunsom.qa.app.testcase.DemoTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RecordProjectTest.testLogin" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Y_uiauto" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yunsom.qa.admin.testcase.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.yunsom.qa.admin.testcase" />
-      <option name="MAIN_CLASS_NAME" value="com.yunsom.qa.admin.testcase.RecordProjectTest" />
-      <option name="METHOD_NAME" value="testLogin" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="test" type="TestNG">
       <module name="Y_uiauto" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="E:\Java\jdk1.8.0_201\jre" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="" />
@@ -147,15 +119,7 @@
     <list>
       <item itemvalue="Maven.Y_uiauto []" />
       <item itemvalue="TestNG.test" />
-      <item itemvalue="TestNG.DemoTest.test" />
-      <item itemvalue="TestNG.RecordProjectTest.testLogin" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="TestNG.RecordProjectTest.testLogin" />
-        <item itemvalue="TestNG.DemoTest.test" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -185,7 +149,7 @@
       <workItem from="1596803953201" duration="2206000" />
       <workItem from="1596935990069" duration="2250000" />
       <workItem from="1596938280031" duration="8253000" />
-      <workItem from="1597058122977" duration="1309000" />
+      <workItem from="1597058122977" duration="8489000" />
     </task>
     <task id="LOCAL-00001" summary="2020.8.7">
       <created>1596790239580</created>
@@ -194,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596790239580</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="2020.8.10  远程调用">
+      <created>1597059619707</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1597059619707</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,35 +173,45 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2020.8.7" />
-    <option name="LAST_COMMIT_MESSAGE" value="2020.8.7" />
+    <MESSAGE value="2020.8.10  远程调用" />
+    <option name="LAST_COMMIT_MESSAGE" value="2020.8.10  远程调用" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="178" key="#Notifications" timestamp="1596936457829">
+    <state x="552" y="178" key="#Notifications" timestamp="1597059657844">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="178" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1596936457829" />
+    <state x="552" y="178" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1597059657844" />
     <state x="552" y="178" key="#Project_Structure" timestamp="1596936029766">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1596936029766" />
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596944752469">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597066471062">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="255" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1603.862/1920.0.1603.862@0.0.1603.862" timestamp="1596784844143" />
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596944752469" />
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597066471062" />
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1597063649812">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1597063649812" />
     <state x="530" y="213" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1596784841483">
       <screen x="0" y="0" width="1603" height="862" />
     </state>
     <state x="530" y="213" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1603.862/1920.0.1603.862@0.0.1603.862" timestamp="1596784841483" />
-    <state x="446" y="27" key="CommitChangelistDialog2" timestamp="1597059548783">
+    <state x="631" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1597060524368">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="631" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597060524368" />
+    <state x="166" y="81" key="CommitChangelistDialog2" timestamp="1597066791626">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="372" y="22" key="CommitChangelistDialog2/0.0.1603.862/1920.0.1603.862@0.0.1603.862" timestamp="1596790238254" />
-    <state x="446" y="27" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1597059548783" />
-    <state x="152" y="68" key="DiffContextDialog" timestamp="1596790222269">
-      <screen x="0" y="0" width="1603" height="862" />
+    <state x="166" y="81" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1597066791626" />
+    <state x="182" y="82" key="DiffContextDialog" timestamp="1597066784574">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="152" y="68" key="DiffContextDialog/0.0.1603.862/1920.0.1603.862@0.0.1603.862" timestamp="1596790222269" />
+    <state x="182" y="82" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597066784574" />
     <state x="696" y="223" key="FileChooserDialogImpl" timestamp="1596940594577">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -240,55 +221,60 @@
       <screen x="0" y="0" width="1603" height="862" />
     </state>
     <state x="678" y="321" width="267" height="284" key="Github.ShareDialog/0.0.1603.862/1920.0.1603.862@0.0.1603.862" timestamp="1596790055640" />
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1597059548820">
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1597066479007">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1559" height="276" key="GridCell.Tab.0.bottom/0.0.1603.862/1920.0.1603.862@0.0.1603.862" timestamp="1596784927910" />
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597059548820" />
-    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1597059548820">
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597066479007" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1597066479007">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1559" height="276" key="GridCell.Tab.0.center/0.0.1603.862/1920.0.1603.862@0.0.1603.862" timestamp="1596784927909" />
-    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597059548820" />
-    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1597059548820">
+    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597066479007" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1597066479007">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1559" height="276" key="GridCell.Tab.0.left/0.0.1603.862/1920.0.1603.862@0.0.1603.862" timestamp="1596784927909" />
-    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597059548820" />
-    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1597059548820">
+    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597066479007" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1597066479007">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1559" height="276" key="GridCell.Tab.0.right/0.0.1603.862/1920.0.1603.862@0.0.1603.862" timestamp="1596784927910" />
-    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597059548820" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1597059548820">
+    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597066479007" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1597066478917">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1559" height="276" key="GridCell.Tab.1.bottom/0.0.1603.862/1920.0.1603.862@0.0.1603.862" timestamp="1596784927910" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597059548820" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1597059548820">
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597066478917" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1597066478916">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1559" height="276" key="GridCell.Tab.1.center/0.0.1603.862/1920.0.1603.862@0.0.1603.862" timestamp="1596784927910" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597059548820" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1597059548820">
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597066478916" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1597066478916">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1559" height="276" key="GridCell.Tab.1.left/0.0.1603.862/1920.0.1603.862@0.0.1603.862" timestamp="1596784927910" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597059548820" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1597059548820">
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597066478916" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1597066478917">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1559" height="276" key="GridCell.Tab.1.right/0.0.1603.862/1920.0.1603.862@0.0.1603.862" timestamp="1596784927910" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597059548820" />
-    <state x="369" y="88" key="SettingsEditor" timestamp="1597058453723">
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597066478917" />
+    <state x="922" y="108" key="SettingsEditor" timestamp="1597066687398">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="302" y="73" key="SettingsEditor/0.0.1603.862/1920.0.1603.862@0.0.1603.862" timestamp="1596783816234" />
-    <state x="369" y="88" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1597058453723" />
-    <state x="393" y="163" key="Vcs.Push.Dialog.v2" timestamp="1596790744956">
-      <screen x="0" y="0" width="1603" height="862" />
+    <state x="922" y="108" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1597066687398" />
+    <state width="254" height="198" key="ShowFilterAction_Filter_Popup" timestamp="1597065476938">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="254" height="198" key="ShowFilterAction_Filter_Popup/0.0.1920.1040@0.0.1920.1040" timestamp="1597065476938" />
+    <state x="471" y="197" key="Vcs.Push.Dialog.v2" timestamp="1597059803966">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="393" y="163" key="Vcs.Push.Dialog.v2/0.0.1603.862/1920.0.1603.862@0.0.1603.862" timestamp="1596790744956" />
+    <state x="471" y="197" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597059803966" />
     <state x="585" y="306" key="com.intellij.ide.util.TipDialog" timestamp="1597058124218">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -302,9 +288,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="511" y="256" width="897" height="606" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040@0.0.1920.1040" timestamp="1596944602605" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1596941953945">
+    <state width="272" height="110" key="documentation.popup.size" timestamp="1597059769579">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1596941953945" />
+    <state width="272" height="110" key="documentation.popup.size/0.0.1920.1040@0.0.1920.1040" timestamp="1597059769579" />
+    <state width="600" height="424" key="javadoc.popup" timestamp="1597061298067">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="600" height="424" key="javadoc.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1597061298067" />
+    <state x="1045" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1597065498061">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1045" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1597065498061" />
   </component>
 </project>

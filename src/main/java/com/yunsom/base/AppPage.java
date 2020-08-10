@@ -8,8 +8,6 @@ import org.apache.http.util.EntityUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.html5.LocalStorage;
 
 import java.io.IOException;
 import java.util.LinkedList;
@@ -26,9 +24,8 @@ public class AppPage extends Page {
      */
 
     public void setLocalStorage(String key, String value) {
-        ChromeDriver c = (ChromeDriver) driver;
-        LocalStorage ls = c.getLocalStorage();
-        ls.setItem(key, value);
+        RemoteStorageWebDriver c = (RemoteStorageWebDriver) driver;
+        c.getLocalStorage().setItem(key, value);
     }
 
     /**
@@ -103,6 +100,7 @@ public class AppPage extends Page {
         lists.add(driver.findElement(By.cssSelector("#am-number-keyboard-container > div > table > tbody > tr:nth-child(3) > td:nth-child(4)")));//确定
         return lists;
     }
+
     public List<WebElement> selectOption() {
         return this.getElements("单选选项");
     }

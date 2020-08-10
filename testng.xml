@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<suits>
-    <suite name="suite" parallel="classes" thread-count="2">
-        <test verbose="2" preserve-order="true" name="DEVOPS">
-            <classes>
-                <class name="com.yunsom.qa.app.testcase.DemoTest"/>
-                <class name="com.yunsom.qa.admin.testcase.RecordProjectTest"/>
-            </classes>
-        </test>
-        <listeners>
-            <listener class-name="org.uncommons.reportng.HTMLReporter"/>
-            <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
-            <listener class-name="com.yunsom.listener.TestngListener"/>
-            <Analyzer class-name="com.yunsom.listener.TestngRetry"/>
-        </listeners>
-    </suite>
+<suite name="suite" parallel="classes" thread-count="2">
+    <test verbose="2" preserve-order="true" name="DEVOPS">
+        <classes>
+            <class name="com.yunsom.qa.app.testcase.DemoTest"/>
+            <class name="com.yunsom.qa.admin.testcase.RecordProjectTest"/>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+        <listener class-name="com.yunsom.listener.TestngListener"/>
+        <Analyzer class-name="com.yunsom.listener.TestngRetry"/>
+    </listeners>
+</suite>
 
-</suits>
+

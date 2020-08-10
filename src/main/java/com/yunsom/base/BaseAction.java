@@ -1,22 +1,18 @@
 package com.yunsom.base;
 
-import java.io.File;
-import java.io.IOException;
-import java.util.*;
-
-import com.alibaba.fastjson.JSON;
-import com.yunsom.util.*;
-import org.apache.http.HttpEntity;
-import org.apache.http.util.EntityUtils;
+import com.yunsom.util.Assertion;
+import com.yunsom.util.ExcelUtil;
+import com.yunsom.util.Log;
 import org.openqa.selenium.Cookie;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.html5.LocalStorage;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
+
+import java.io.File;
+import java.util.*;
 
 /**
  * 测试用例初始化
@@ -82,7 +78,6 @@ public class BaseAction {
             System.out.println("--------------END-------------------");
         }
     }
-
     /**
      * @param @param url    设定文件
      * @return void    返回类型
