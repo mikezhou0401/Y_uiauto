@@ -53,13 +53,11 @@ public class SeleniumDriver {
                 driver = new ChromeDriver(options);
             } else {
                 System.out.println("----------------------该模式为远程执行模式,分布式执行----------------------------------");
-
                 options.setCapability("chrome.switches", Arrays.asList("--incognito"));
                 options.addArguments("--test-type");
                 options.setCapability(ChromeOptions.CAPABILITY, options);
                 try {
                     driver = new RemoteStorageWebDriver(new URL("http://192.168.2.2:4446/wd/hub"), options);
-
                 } catch (MalformedURLException e) {
                     e.printStackTrace();
                 }

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="659719cc-7281-4755-a330-124e26119489" name="Default Changelist" comment="">
+    <list default="true" id="659719cc-7281-4755-a330-124e26119489" name="Default Changelist" comment="2020.8.10  远程调用">
+      <change afterPath="$PROJECT_DIR$/src/test/resources/files/chromedriver" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yunsom/base/SeleniumDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yunsom/base/SeleniumDriver.java" afterDir="false" />
     </list>
@@ -20,6 +21,9 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Y_uiauto" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -145,6 +149,7 @@
       <workItem from="1596935990069" duration="2250000" />
       <workItem from="1596938280031" duration="8253000" />
       <workItem from="1597058122977" duration="8898000" />
+      <workItem from="1597067132277" duration="1128000" />
     </task>
     <task id="LOCAL-00001" summary="2020.8.7">
       <created>1596790239580</created>
@@ -167,11 +172,29 @@
       <option name="project" value="LOCAL" />
       <updated>1597066909349</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="2020.8.10  远程调用">
+      <created>1597067171495</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1597067171495</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2020.8.7" />
@@ -204,16 +227,16 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="631" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597060524368" />
-    <state x="166" y="81" key="CommitChangelistDialog2" timestamp="1597066908270">
+    <state x="166" y="81" key="CommitChangelistDialog2" timestamp="1597068338155">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="372" y="22" key="CommitChangelistDialog2/0.0.1603.862/1920.0.1603.862@0.0.1603.862" timestamp="1596790238254" />
-    <state x="166" y="81" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1597066908270" />
-    <state x="182" y="82" key="DiffContextDialog" timestamp="1597066901920">
+    <state x="166" y="81" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1597068338155" />
+    <state x="182" y="82" width="1536" height="860" key="DiffContextDialog" timestamp="1597068149136">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="152" y="68" key="DiffContextDialog/0.0.1603.862/1920.0.1603.862@0.0.1603.862" timestamp="1596790222269" />
-    <state x="182" y="82" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597066901920" />
+    <state x="182" y="82" width="1536" height="860" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597068149136" />
     <state x="696" y="223" key="FileChooserDialogImpl" timestamp="1596940594577">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -263,6 +286,14 @@
     </state>
     <state width="1559" height="276" key="GridCell.Tab.1.right/0.0.1603.862/1920.0.1603.862@0.0.1603.862" timestamp="1596784927910" />
     <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597067070603" />
+    <state x="184" y="86" key="MergeDialog" timestamp="1597068312450">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="184" y="86" key="MergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597068312450" />
+    <state x="669" y="235" key="MultipleFileMergeDialog" timestamp="1597068312454">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="669" y="235" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597068312454" />
     <state x="922" y="108" key="SettingsEditor" timestamp="1597066687398">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -272,20 +303,20 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="254" height="198" key="ShowFilterAction_Filter_Popup/0.0.1920.1040@0.0.1920.1040" timestamp="1597065476938" />
-    <state x="471" y="197" key="Vcs.Push.Dialog.v2" timestamp="1597067068065">
+    <state x="471" y="197" key="Vcs.Push.Dialog.v2" timestamp="1597067840939">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="393" y="163" key="Vcs.Push.Dialog.v2/0.0.1603.862/1920.0.1603.862@0.0.1603.862" timestamp="1596790744956" />
-    <state x="471" y="197" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597067068065" />
+    <state x="471" y="197" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597067840939" />
     <state x="585" y="306" key="com.intellij.ide.util.TipDialog" timestamp="1597067135838">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="488" y="254" key="com.intellij.ide.util.TipDialog/0.0.1603.862/1920.0.1603.862@0.0.1603.862" timestamp="1596790798127" />
     <state x="585" y="306" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597067135838" />
-    <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596937246779">
+    <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597068344809">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1596937246779" />
+    <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597068344809" />
     <state x="511" y="256" width="897" height="606" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1596944602605">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
