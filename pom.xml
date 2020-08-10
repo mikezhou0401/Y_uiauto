@@ -14,6 +14,7 @@
      </properties>-->
 
     <build>
+        <defaultGoal>compile</defaultGoal>
         <plugins>
             <!-- 添加插件 关联testNg.xml -->
             <plugin>
