@@ -57,7 +57,7 @@ public class SeleniumDriver {
                 options.addArguments("--test-type");
                 options.setCapability(ChromeOptions.CAPABILITY, options);
                 try {
-                    driver = new RemoteStorageWebDriver(new URL("http://192.168.2.2:4446/wd/hub"), options);
+                    driver = new RemoteStorageWebDriver(new URL("http://172.16.18.100:4446/wd/hub"), options);
                 } catch (MalformedURLException e) {
                     e.printStackTrace();
                 }

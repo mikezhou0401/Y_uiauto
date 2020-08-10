@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="659719cc-7281-4755-a330-124e26119489" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yunsom/base/SeleniumDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yunsom/base/SeleniumDriver.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +147,7 @@
       <workItem from="1596935990069" duration="2250000" />
       <workItem from="1596938280031" duration="8253000" />
       <workItem from="1597058122977" duration="8898000" />
-      <workItem from="1597067132277" duration="3612000" />
+      <workItem from="1597067132277" duration="4606000" />
     </task>
     <task id="LOCAL-00001" summary="2020.8.7">
       <created>1596790239580</created>
@@ -190,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597070393853</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="2020.8.10  jenkins调用增加配置">
+      <created>1597070772899</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1597070772899</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,7 +219,8 @@
     <MESSAGE value="2020.8.7" />
     <MESSAGE value="2020.8.10  远程调用" />
     <MESSAGE value="2020.8.10  生成报告修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="2020.8.10  生成报告修改" />
+    <MESSAGE value="2020.8.10  jenkins调用增加配置" />
+    <option name="LAST_COMMIT_MESSAGE" value="2020.8.10  jenkins调用增加配置" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#Notifications" timestamp="1597059657844">
@@ -240,11 +249,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="631" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597060524368" />
-    <state x="166" y="81" key="CommitChangelistDialog2" timestamp="1597070393274">
+    <state x="166" y="81" key="CommitChangelistDialog2" timestamp="1597070772277">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="372" y="22" key="CommitChangelistDialog2/0.0.1603.862/1920.0.1603.862@0.0.1603.862" timestamp="1596790238254" />
-    <state x="166" y="81" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1597070393274" />
+    <state x="166" y="81" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1597070772277" />
     <state x="182" y="82" width="1536" height="860" key="DiffContextDialog" timestamp="1597070390275">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -316,11 +325,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="254" height="198" key="ShowFilterAction_Filter_Popup/0.0.1920.1040@0.0.1920.1040" timestamp="1597065476938" />
-    <state x="471" y="197" key="Vcs.Push.Dialog.v2" timestamp="1597070402584">
+    <state x="471" y="197" key="Vcs.Push.Dialog.v2" timestamp="1597071747750">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="393" y="163" key="Vcs.Push.Dialog.v2/0.0.1603.862/1920.0.1603.862@0.0.1603.862" timestamp="1596790744956" />
-    <state x="471" y="197" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597070402584" />
+    <state x="471" y="197" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597071747750" />
     <state x="585" y="306" key="com.intellij.ide.util.TipDialog" timestamp="1597067135838">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
