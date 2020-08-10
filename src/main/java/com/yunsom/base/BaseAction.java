@@ -93,6 +93,11 @@ public class BaseAction {
     public void open(String url) {
         driver.get(url);
         Log.logInfo("打开浏览器,输入地址:" + url);
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     /**

@@ -72,15 +72,15 @@ public class Page extends Locator {
             this.getAction().keyUp(Keys.CONTROL).sendKeys(Keys.PAGE_DOWN).perform();
         }
     }
-    public void  refresh(){
+
+    public void refresh() {
+        driver.navigate().refresh();
         try {
-            Thread.sleep(2000);
+            Thread.sleep(1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        driver.navigate().refresh();
     }
-
 
 
 }

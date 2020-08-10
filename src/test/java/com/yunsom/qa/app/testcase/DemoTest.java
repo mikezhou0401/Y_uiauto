@@ -24,7 +24,7 @@ public class DemoTest extends BaseAction {
         InstanceListPage instanceListPage = new InstanceListPage(driver);
         instanceListPage.refresh();
         instanceListPage.add().click();
-        sleep(1000);
+
 
         AppEditPage appEditPage = new AppEditPage(driver);
 
@@ -63,9 +63,7 @@ public class DemoTest extends BaseAction {
          **/
         for (WebElement webElement : appEditPage.numbers()) {
             webElement.click();
-            for (int i = 0; i < webElement.getText().length(); i++) {
-                appEditPage.keypad().get(12).click();
-            }
+            sleep(200);
             appEditPage.keypad().get(1).click();
             appEditPage.keypad().get(13).click();
         }

@@ -7,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.ie.InternetExplorerOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
@@ -34,15 +35,15 @@ public class SeleniumDriver {
             driver = new FirefoxDriver();
         } else if ("ie".equals(PropertiesUtil.GetValueByKey("browserType"))) {
             System.setProperty("webdriver.ie.driver", "src/test/resources/files/iedriver.exe");
+            InternetExplorerOptions options = new InternetExplorerOptions();
             DesiredCapabilities capabilities = DesiredCapabilities.internetExplorer();
             capabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
             capabilities.setCapability("ignoreProtectedModeSettings", true);
-            driver = new InternetExplorerDriver(capabilities);
+            driver = new InternetExplorerDriver(options);
         } else if ("chrome".equals(PropertiesUtil.GetValueByKey("browserType"))) {
+            ChromeOptions options = new ChromeOptions();
             if (PropertiesUtil.GetValueByKey("remoteOrNot").equals("no")) {
-                ChromeOptions options = new ChromeOptions();
                 if (System.getProperty("os.name").contains("Mac")) {
-                    //System.setProperty("webdriver.chrome.driver", "/Users/chenggang/Library/chromedriver/chromedriver");
                     System.setProperty("webdriver.chrome.driver", PropertiesUtil.GetValueByKey("macChromePath"));
                     options.addArguments("--kiosk");
                 } else {
@@ -53,14 +54,12 @@ public class SeleniumDriver {
                 driver = new ChromeDriver(options);
             } else {
                 System.out.println("----------------------该模式为远程执行模式,分布式执行----------------------------------");
-                DesiredCapabilities capability = null;
-                capability = DesiredCapabilities.chrome();
-                capability.setCapability("chrome.switches", Arrays.asList("--incognito"));
-                ChromeOptions options1 = new ChromeOptions();
-                options1.addArguments("--test-type");
-                capability.setCapability(ChromeOptions.CAPABILITY, options1);
+
+                options.setCapability("chrome.switches", Arrays.asList("--incognito"));
+                options.addArguments("--test-type");
+                options.setCapability(ChromeOptions.CAPABILITY, options);
                 try {
-                    driver = new RemoteWebDriver(new URL("http://172.26.8.168:4444/wd/hub"), capability);
+                    driver = new RemoteWebDriver(new URL("http://192.168.2.2:4446/wd/hub"), options);
                 } catch (MalformedURLException e) {
                     e.printStackTrace();
                 }

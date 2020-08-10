@@ -8,12 +8,13 @@
     <artifactId>Y_uiauto</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-   <!-- <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <xmlFileName>testng.xml</xmlFileName>
-    </properties>-->
+    <!-- <properties>
+         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+         <xmlFileName>testng.xml</xmlFileName>
+     </properties>-->
 
     <build>
+        <defaultGoal>compile</defaultGoal>
         <plugins>
             <!-- 添加插件 关联testNg.xml -->
             <plugin>
@@ -65,11 +66,13 @@
             <scope>test</scope>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-server</artifactId>
-            <version>2.45.0</version>
+            <artifactId>selenium-java</artifactId>
+            <version>3.141.59</version>
         </dependency>
+
         <dependency>
             <groupId>org.jyaml</groupId>
             <artifactId>jyaml</artifactId>
@@ -115,5 +118,19 @@
             <version>RELEASE</version>
             <scope>compile</scope>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.4</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.4</version>
+        </dependency>
+
     </dependencies>
 </project>
